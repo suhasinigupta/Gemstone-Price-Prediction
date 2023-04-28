@@ -1,5 +1,5 @@
 ## Diamond Price Prediction
-** Introduction About the Data : ** 
+ Introduction About the Data : 
 The dataset The goal is to predict price of given diamond (Regression Analysis).
 
 There are 10 independent variables (including id):
@@ -23,16 +23,12 @@ Dataset Source Link : https://www.kaggle.com/competitions/playground-series-s3e8
 
 
 ## create new python environment
-'''
-conda create -n venv python==3.7 -y
-'''
+```conda create -n venv python==3.7 -y ```
 
 ## activate the environment 
-'''
-conda activate venv
-'''
+
+```conda activate venv```
 
 ## install requirements using 
-'''
-pip install -r requirements.txt
-'''
+
+```pip install -r requirements.txt```
