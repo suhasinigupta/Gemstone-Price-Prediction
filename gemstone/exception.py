@@ -2,11 +2,11 @@ from gemstone.logger import logging
 import os, sys
 
 
-class CustomException:
-    def __init__(self, error_message: Exception, error_detail: sys):
-        super.__init__(error_message) 
+class CustomException(Exception):
+    def __init__(self, error_message, error_detail: sys):
+        super().__init__(error_message)
         self.error_detail= error_detail
-        self.error_messgae= CustomException.get_error_messgae(error_message, error_detail)
+        self.error_message= CustomException.get_error_messgae(error_message, error_detail)
 
     @staticmethod
     def get_error_messgae(error_message, error_detail) -> str :
@@ -22,4 +22,11 @@ class CustomException:
        return self.error_message
     
 
-    
+if __name__=="__main__":
+    logging.info("Logging has started")
+    try:
+        a=1/0
+    except Exception as e:
+        logging.info('Dicision by zero') 
+        raise CustomException(e,sys)
+ 

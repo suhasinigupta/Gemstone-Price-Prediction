@@ -1,0 +1,9 @@
+[ 2023-04-29 09:53:27,497 ] 20 root - INFO - Starting Data Ingestion
+[ 2023-04-29 09:53:27,895 ] 26 root - INFO - Splitting the data as train and test
+[ 2023-04-29 09:53:30,023 ] 31 root - INFO - Data Ingestion Completed
+[ 2023-04-29 09:53:30,039 ] 51 root - INFO - Starting Data Transformation
+[ 2023-04-29 09:53:31,028 ] 74 root - INFO - Preprocessor pickle file saved
+[ 2023-04-29 09:53:31,028 ] 19 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2023-04-29 09:53:32,880 ] 37 root - INFO - Model Report : {'LinearRegression': 0.9373389151826441, 'Lasso': 0.9373167735013431, 'Ridge': 0.9373386825679115, 'Elasticnet': 0.8562269511083838}
+[ 2023-04-29 09:53:32,884 ] 50 root - INFO - Best Model Found , Model Name : LinearRegression , R2 Score : 0.9373389151826441
+[ 2023-04-29 09:53:32,884 ] 59 root - INFO - Exception occur at Model Training Stage

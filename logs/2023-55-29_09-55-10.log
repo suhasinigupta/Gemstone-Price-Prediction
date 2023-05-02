@@ -1,0 +1,8 @@
+[ 2023-04-29 09:55:15,661 ] 20 root - INFO - Starting Data Ingestion
+[ 2023-04-29 09:55:16,110 ] 26 root - INFO - Splitting the data as train and test
+[ 2023-04-29 09:55:18,341 ] 31 root - INFO - Data Ingestion Completed
+[ 2023-04-29 09:55:18,341 ] 51 root - INFO - Starting Data Transformation
+[ 2023-04-29 09:55:19,225 ] 74 root - INFO - Preprocessor pickle file saved
+[ 2023-04-29 09:55:19,233 ] 19 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2023-04-29 09:55:20,579 ] 37 root - INFO - Model Report : {'LinearRegression': 0.9362496493045298, 'Lasso': 0.9362203141816753, 'Ridge': 0.93625138263381, 'Elasticnet': 0.8543563279820543}
+[ 2023-04-29 09:55:20,587 ] 50 root - INFO - Best Model Found , Model Name : Ridge , R2 Score : 0.93625138263381
