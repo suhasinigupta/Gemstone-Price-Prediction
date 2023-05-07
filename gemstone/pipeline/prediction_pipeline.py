@@ -45,11 +45,21 @@ class CustomData:
         self.clarity=clarity
 
     def get_data_as_dataframe(self):
-       try: 
-           input_dict={'carat': self.carat, 'depth':self.depth, 'table':self.table, 'x':self.x, 'y':self.y, 'z':self.z,
-                   'cut':self.cut, 'color':self.color, 'clarity': self.clarity}
+        try: 
+            custom_data_input_dict = {
+                'carat':[self.carat],
+                'depth':[self.depth],
+                'table':[self.table],
+                'x':[self.x],
+                'y':[self.y],
+                'z':[self.z],
+                'cut':[self.cut],
+                'color':[self.color],
+                'clarity':[self.clarity]
+            }
 
-           input_df= pd.DataFrame(input_dict)
-           return input_df
-       except Exception as e:
-        raise CustomException(e, sys)
+            df = pd.DataFrame(custom_data_input_dict)
+            return df
+        except Exception as e:
+            raise CustomException(e, sys)
+        

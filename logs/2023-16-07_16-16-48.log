@@ -1,0 +1,8 @@
+[ 2023-05-07 16:16:52,853 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-05-07 16:16:52,867 ] 224 werkzeug - INFO -  * Debugger PIN: 282-789-288
+[ 2023-05-07 16:16:55,257 ] 224 werkzeug - INFO - 192.168.29.6 - - [07/May/2023 16:16:55] "GET / HTTP/1.1" 200 -
+[ 2023-05-07 16:17:01,310 ] 224 werkzeug - INFO - 192.168.29.6 - - [07/May/2023 16:17:01] "GET /predict HTTP/1.1" 200 -
+[ 2023-05-07 16:17:27,817 ] 14 root - INFO - Predicting the output and loading object 
+[ 2023-05-07 16:17:29,636 ] 18 root - INFO - Transforming the input dataframe 
+[ 2023-05-07 16:17:29,786 ] 224 werkzeug - INFO - 192.168.29.6 - - [07/May/2023 16:17:29] "POST /predict HTTP/1.1" 200 -
+[ 2023-05-07 16:19:11,342 ] 224 werkzeug - INFO -  * Detected change in 'e:\\gemstone-price-prediction\\gemstone\\pipeline\\prediction_pipeline.py', reloading
