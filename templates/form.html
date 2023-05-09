@@ -1,76 +1,134 @@
 <html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+
+        background-color: rgb(153, 193, 92);
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+        margin-top: 130px;
+    }
+
+
+    .form-group {
+        height: 30px;
+
+    }
+
+    h1 {
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(4, 64, 76);
+    }
+
+    input,
+    select {
+        border-radius: 6px;
+        border: 2px solid grey;
+        height: 20px;
+        background-color: bisque;
+    }
+
+    #sub {
+        width: 190px;
+        background-color: aliceblue;
+        color: black;
+    }
+
+    #sub:hover {
+        background-color: rgb(199, 117, 17);
+    }
+</style>
+
 <body>
-<form action="/predict" method="POST">
-    <div class="form-group">
-        <label for="carat">Carat:</label>
-        <input type="text" id="carat" name="carat" placeholder="Enter carat value (float)">
-    </div>
+    <h1>Enter the below details</h1>
+    <div class="control">
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="carat">Carat:</label>
+                <input type="text" id="carat" name="carat" placeholder="Enter carat value (float)">
+            </div>
 
-    <div class="form-group">
-        <label for="depth">Depth:</label>
-        <input type="text" id="depth" name="depth" placeholder="Enter depth value (float)">
-    </div>
+            <div class="form-group">
+                <label for="depth">Depth:</label>
+                <input type="text" id="depth" name="depth" placeholder="Enter depth value (float)">
+            </div>
 
-    <div class="form-group">  
-        <label for="table">Table:</label>
-        <input type="text" id="table" name="table" placeholder="Enter table value (float)">
-    </div>
-    
-    <div class="form-group">
-        <label for="x">x:</label>
-        <input type="text" id="x" name="x" placeholder="Enter x value (float)">
-    </div>
-  
-    <div class="form-group">
-        <label for="y">y:</label>
-        <input type="text" id="y" name="y" placeholder="Enter y value (float)">
-    </div>
-  
-    <div class="form-group">
-        <label for="z">z:</label>
-        <input type="text" id="z" name="z" placeholder="Enter z value (float)">
-    </div>         
-  
-<div class="form-group">
-  <label for="cut">Cut:</label>
-  <select id="cut" name="cut">
-    <option value="Fair">Fair</option>
-    <option value="Good">Good</option>
-    <option value="Very Good">Very Good</option>
-    <option value="Premium">Premium</option>
-    <option value="Ideal">Ideal</option>
-  </select>
-</div>
-  
-<div class="form-group">
-  <label for="color">Color:</label>
-  <select id="color" name="color">
-    <option value="D">D</option>
-    <option value="E">E</option>
-    <option value="F">F</option>
-    <option value="G">G</option>
-    <option value="H">H</option>
-    <option value="I">I</option>
-    <option value="J">J</option>
-  </select>
-</div>
+            <div class="form-group">
+                <label for="table">Table:</label>
+                <input type="text" id="table" name="table" placeholder="Enter table value (float)">
+            </div>
 
-<div class="form-group">
-  <label for="clarity">Clarity:</label>
-  <select id="clarity" name="clarity">
-    <option value="I1">I1</option>
-    <option value="SI2">SI2</option>
-    <option value="SI1">SI1</option>
-    <option value="VS2">VS2</option>
-    <option value="VS1">VS1</option>
-    <option value="VVS2">VVS2</option>
-    <option value="VVS1">VVS1</option>
-    <option value="IF">IF</option>
-  </select>
-</div>
+            <div class="form-group">
+                <label for="x">x:</label>
+                <input type="text" id="x" name="x" placeholder="Enter x value (float)">
+            </div>
 
-<div style="clear:both;"></div>
-  <input type="submit" value="Submit">
-</form>
+            <div class="form-group">
+                <label for="y">y:</label>
+                <input type="text" id="y" name="y" placeholder="Enter y value (float)">
+            </div>
+
+            <div class="form-group">
+                <label for="z">z:</label>
+                <input type="text" id="z" name="z" placeholder="Enter z value (float)">
+            </div>
+
+            <div class="form-group">
+                <label for="cut">Cut:</label>
+                <select id="cut" name="cut">
+                    <option value="Fair">Fair</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Ideal">Ideal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="clarity">Clarity:</label>
+                <select id="clarity" name="clarity">
+                    <option value="I1">I1</option>
+                    <option value="SI2">SI2</option>
+                    <option value="SI1">SI1</option>
+                    <option value="VS2">VS2</option>
+                    <option value="VS1">VS1</option>
+                    <option value="VVS2">VVS2</option>
+                    <option value="VVS1">VVS1</option>
+                    <option value="IF">IF</option>
+                </select>
+            </div>
+
+            <div style="clear:both;"></div>
+            <input type="submit" value="Submit" id="sub">
+        </form>
+    </div>
 </body>
+
 </html>
